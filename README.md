@@ -77,6 +77,73 @@ After all Create a fork from this repository, Then append your code at the code 
 
 
 
+Week Five Workshop
+At the end of the week, submit the following workshop.
+use IaC Terraform to build the following resource besides requirement specifications:
+In the following task will walk through the RDS creation, Then test accessibility by pgadmin program.
+
+Create a diagram of this deployment.
+
+Use S3 to store Terraform statefile using "erakiterrafromstatefiles" bucket
+
+Consider to use different name that others (i.e. specify a unique name for state file key)
+Create a VPC called vpc-01
+
+Create Subnets called subnet-01, subnet-02.
+
+Create a Security Group called sg-01
+
+Allows inbound 5432 port form all.
+Allows outbound role for all.
+Create a subnet group of RDS Holds the created subnets.
+
+Create a RDS instance of PostgreSQL latest version.
+
+define allocate storage as 20
+engine as postgres
+engine_version as LATEST
+instance_calss as db.t3.micro
+name as postgresqldatabase
+username as postgres
+password as CHOOSE ONE
+db_security_group_ids as created
+vpc_security_group_ids as created
+skip_final_snapshot as true
+DON'T FORGET THE TAGS
+after deployed, Check connection using pgadmin program from you local device; this requires the RDS to be publicly accessable.
+-----------------------
+At the end of the week, submit the following workshop.
+use IaC Terraform to build the following resource besides requirement specifications:
+In the following task will walk through the RDS creation, Then test accessibility by a bastion server.
+
+Create a diagram of this deployment.
+
+Use S3 to store Terraform statefile using "erakiterrafromstatefiles" bucket
+
+Consider to use different name that others (i.e. specify a unique name for state file key)
+Deploy a Higly-available RDS in multiple Avalibility zones i.e. multi-az instance
+
+The RDS structure should be as primary and standby with out read replica.
+
+Both of RDS using the same security group.
+
+Allows inbound 5432 port form all.
+Allows outbound role for all.
+The RDS should NOT be publicly accessable.
+
+Create a bastion host at the same VPC and connect to The RDS using psql commands.
+
+
+
+
+
+
+
+
+
+
+
+
 
 Configure lifecycle expiration object at 7 days.
 
