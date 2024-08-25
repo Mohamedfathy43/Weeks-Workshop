@@ -11,3 +11,7 @@ Week_Six_ Workshop/.terraform/providers/registry.terraform.io/hashicorp/aws/5.61
 Week_Six_ Workshop/.terraform/providers/registry.terraform.io/hashicorp/aws/5.61.0/linux_amd64/terraform-provider-aws_v5.61.0_x5
 Week_Six_ Workshop/terraform.tfstate.backup
 Week_Six_ Workshop/terraform.tfstate
+week seven workshop/.terraform/providers/registry.terraform.io/hashicorp/aws/5.64.0/linux_amd64/LICENSE.txt
+week seven workshop/.terraform/providers/registry.terraform.io/hashicorp/aws/5.64.0/linux_amd64/terraform-provider-aws_v5.64.0_x5
+week seven workshop/terraform.tfstate.backup
+week seven workshop/terraform.tfstate
